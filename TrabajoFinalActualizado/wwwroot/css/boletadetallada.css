@@ -1,0 +1,62 @@
+﻿@font-face {
+    font-family: "Means Web";
+    src: url("../fonts/fontawesome-webfont.woff");
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../fonts/GraphikRegular.otf");
+}
+
+body {
+    background-image: url("../img/backimage.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 120vh;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.movie-info {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+.card-columns {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.card-deck {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+#texto {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#horarios {
+    display: inline-block;
+}
+
+.table {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}

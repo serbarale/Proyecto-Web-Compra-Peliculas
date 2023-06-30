@@ -1,0 +1,49 @@
+﻿
+
+h1 {
+    font-family: 'Mona Sans';
+    font-weight: bold;
+    color: white;
+}
+
+.titulos {
+    color: white;
+    background-color: #5027d5;
+    height: 50px;
+}
+
+table {
+    height: auto;
+    background-color: #fffb;
+    border-collapse: collapse;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    border-radius: .8rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(7px);
+}
+
+.fila-cuerpo:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.form-control {
+    background: #fffb;
+    display: inline-block;
+    height: 40px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: black;
+    position: relative;
+}
+
+    .form-control:focus {
+        background: rgba(225, 220, 220, 0.6);
+        border-color: #6c33c2;
+        box-shadow: 0 0 0 0.2rem rgba(107, 79, 255, 0.25);
+        outline: 0;
+    }

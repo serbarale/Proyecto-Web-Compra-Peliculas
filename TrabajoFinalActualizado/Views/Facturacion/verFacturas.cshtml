@@ -1,0 +1,66 @@
+﻿@model IEnumerable<TrabajoFinalActualizado.Models.TbFactura>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Mis Compras ";
+}
+<html>
+    <head>
+        <link rel="stylesheet" href="~/css/listamantenimiento.css" />
+        <script src="https://kit.fontawesome.com/61ab311a79.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="mt-5 mb-5">
+            <h1>
+                <i class="fa-solid fa-house-circle-check"></i> Mis Compras
+            </h1>
+        </div>
+        <table>
+            <thead class="titulos">
+                <tr class="text-center">
+                    <th class="col-2">Fecha de Compra</th>
+                    <th class="col-2">Numero de Boleta</th>
+                    <th class="col-2">Forma de Pago</th>
+                    <th class="col-2">Monto Total</th>
+                    <th class="col-2">Boleta</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                @foreach (var item in Model)
+                {   
+                    <form asp-controller="Facturacion" asp-action="boletaDetallada" method="post">
+                        <tr class="mt-2 mb-2 fila-cuerpo">
+                            <td class="align-middle text-center py-2">
+                                    @item.FechaFactura.ToShortDateString()
+                            </td>
+                            <td class="align-middle text-center py-2">
+                                B000-@item.IdFactura
+                            </td>
+                            <td class="align-middle text-center py-2">
+                                    @item.FormaDePago
+                            </td>
+                            <td class="align-middle text-center py-2">
+                                S/. @item.Total
+                            </td>
+                            <input type="hidden" name="txtIdFactura" value="@item.IdFactura" />
+                            <input type="hidden" name="txtFecha" value="@item.FechaFactura.ToShortDateString()" />
+                            <input type="hidden" name="txtTipoPago" value="@item.FormaDePago" />
+                            <input type="hidden" name="txtTotal" value="@item.Total" />
+                            <input type="hidden" name="txtIdCliente" value="@ViewData["cod"]" />
+                            <td class="align-middle text-center py-2">
+                                <button type="submit" class="btn btn-primary" value="btn" name="iniciar" data-toggle="modal" data-target="#exampleModal">
+                                    <i class="fa-regular fa-rectangle-list"></i> Ver Boleta
+                                </button>
+                            </td>
+                        </tr>
+                    </form>
+                }
+            </tbody>
+
+        </table>
+        <div class="mt-5">
+            <a asp-controller="Perfil" asp-action="Perfil" class="btn btn-primary">Atras</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+﻿@model IEnumerable<TrabajoFinalActualizado.Models.TbPelicula>
+@{
+    ViewData["Title"] = "Mantenimiento ";
+}
+<html>
+    <head>
+        <link rel="stylesheet" href="~/css/listamantenimiento.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/61ab311a79.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div class="mt-5">
+            <h1>
+                <i class="bi bi-gear"></i> Mantenimiento
+            </h1>
+        </div>
+        <div class="input-group" style="margin-top: 40px; margin-bottom: 40px;">
+
+            <input type="text" id="myInput" class="form-control" style="margin-right: 110px;" placeholder="Search...">
+            <div class="input-group-append">
+                <a class="btn btn-success" asp-action="Nuevo" style="margin-right: 60px;"><i class="bi bi-plus-circle"></i> Agregar </a>
+            </div>
+        </div>
+        <table>
+            <thead class="titulos">
+                <tr class="text-center">
+                    <th class="col-1">Imagen</th>
+                    <th class="col-1">Codigo</th>
+                    <th class="col-2">Titulo</th>
+                    <th class="col-2">Genero</th>
+                    <th class="col-2">Sinopsis</th>
+                    <th class="col-auto">Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                @foreach (var item in Model)
+                {
+                    <tr class="mt-2 mb-2 fila-cuerpo">
+                        <td class="align-middle text-center py-2">
+                            <img src="@item.ImagenUrl" style="width: 45px; height: 67px;" />
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            @item.IdPelicula
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            @item.Titulo
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            @item.Genero.NombreGenero
+                        </td>
+                        <td class="align-middle text-left py-2">
+                            @{
+                                var sinopsis = item.Sinopsis;
+                                if (sinopsis.Length > 30)
+                                {
+                                    sinopsis = sinopsis.Substring(0, 30) + "...";
+                                }
+                            }
+                            @sinopsis
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            <a class="btn btn-outline-primary" asp-action="Editar" asp-route-id="@item.IdPelicula"><i class="bi bi-pencil-square"></i>Editar </a> |
+                            <a class="btn btn-outline-info" asp-action="Detalles" asp-route-id="@item.IdPelicula"><i class="bi bi-eye"></i>Detalles </a> |
+                            <a class="btn btn-danger text-white" asp-action="Eliminar" asp-route-id="@item.IdPelicula"><i class="bi bi-trash"></i>Eliminar </a>
+                        </td>
+
+
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </body>
+</html>
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<TrabajoFinalActualizado.Models.TbPelicula>
+@{
+}
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/hojapeliculas.css">
+</head>
+<body>
+    <div class="input-group" style="margin-top: 40px; margin-bottom: 40px;">
+        <div class="input-group-prepend">
+            <span class="input-group-text">
+                <i class="bi bi-search"></i>
+            </span>
+        </div>
+        <input type="text" id="myInput" class="form-control" style="margin-right: 110px;" placeholder="Search...">
+    </div>
+
+    <div class="row" id="tarjetas">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3 card-column">
+                <div class="card">
+                    <div class="imagen">
+                        <img class="card-img-top" src="@item.ImagenUrl">
+                    </div>
+                    <div class="intro">
+                        <h1>@item.Titulo</h1>
+                        <p>
+                            <span>El precio es de : </span>s/ @item.Precio nuevos soles.
+                        </p>
+                        <a asp-controller="Pelicula" asp-action="sobrePelicula" asp-route-id="@item.IdPelicula" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#tarjetas .card-column").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

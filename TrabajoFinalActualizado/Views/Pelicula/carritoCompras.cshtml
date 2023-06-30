@@ -1,0 +1,78 @@
+﻿@model IEnumerable<TrabajoFinalActualizado.Models.VentaTemporal>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+    <head>
+        <link rel="stylesheet" href="~/css/listamantenimiento.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+
+        <div class="mt-5 mb-5">
+            <h1>
+                <i class="bi bi-cart-check-fill"></i> CARRITO DE COMPRAS
+            </h1>
+        </div>
+        <table>
+            <thead class="titulos">
+                <tr class="text-center">
+                    <th class="col-1">Codigo</th>
+                    <th class="col-3">Titulo</th>
+                    <th class="col-2">Precio U.</th>
+                    <th class="col-1">Cantidad</th>
+                    <th class="col-2">Total</th>
+                    <th class="col-2">Modificar</th>
+                    <th class="col-2">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                @foreach (var item in Model)
+                {
+                    <tr class="mt-2 mb-2 fila-cuerpo">
+                        <td class="align-middle text-center py-2">
+                            @item.codigoV
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            @item.nombrePeliculaV
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            S/ @item.precioV
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            @item.cantidadV
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            S/ @item.totalV
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            <a class="btn btn-outline-primary" asp-controller="Pelicula" asp-action="Modificar" asp-route-id="@item.codigoV">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            <a class="btn btn-danger text-white" asp-controller="Pelicula" asp-action="Eliminar" asp-route-id="@item.codigoV">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+        <h5 class="mt-3">TOTAL: s/ @ViewData["totalCompra"]</h5>
+        
+        <form asp-controller="Pelicula" asp-action="Confirmacion_Pago" method="post">
+            <input type="hidden" name="txtmonto" value="@ViewData["totalCompra"]" />
+			<button type="submit" class="btn btn-primary mt-5" value="btn" name="grabar" 
+			data-toggle="modal" data-target="#exampleModal">Confirmar Compra</button>
+	    </form>
+        <div class="mt-3">
+            <a class="btn btn-primary" asp-controller="Pelicula" asp-action="Index"> Seguir Comprando </a>
+        </div>
+    </body>
+</html>

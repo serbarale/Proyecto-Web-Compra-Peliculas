@@ -1,0 +1,36 @@
+﻿@model IEnumerable<TrabajoFinalActualizado.Models.TbPelicula>
+
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/hojapeliculas.css">
+</head>
+    <body>
+        <h3 class="alert-primary">LISTADO DE PELICULAS</h3>
+
+        <table class="table table-bordered">
+            <tr>
+                <td class="text-center">ID</td>
+                <td class="text-center">TITULO</td>
+                <td class="text-center">GENERO ID</td>
+                <td class="text-center">DURACION</td>
+                <td class="text-center">SINOPSIS</td>
+                <td class="text-center">FECHA DE LANZAMIENTO</td>
+                <td class="text-center">PRECIO</td>
+            </tr>
+            <tbody id="myTable">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.IdPelicula</td>
+                        <td>@item.Titulo</td>
+                        <td>@item.GeneroId</td>
+                        <td>@item.Duracion</td>
+                        <td>@item.Sinopsis</td>
+                        <td>@item.FechaLanzamiento</td>
+                        <td>@item.Precio</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </body>
+</html>

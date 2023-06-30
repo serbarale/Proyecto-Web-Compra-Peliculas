@@ -1,0 +1,57 @@
+﻿@model IEnumerable<TrabajoFinalActualizado.Models.TbTarjetaRecarga>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Historial ";
+    var idTarjetaEmpresa = Model.FirstOrDefault()?.IdTarjetaEmpresa;
+}
+<html>
+    <head>
+        <link rel="stylesheet" href="~/css/listamantenimiento.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/61ab311a79.js" crossorigin="anonymous"></script>
+    </head>
+        <body>
+        <div class="mt-5 mb-5">
+            <h1>
+                <i class="fa-solid fa-clock-rotate-left"></i> Historial de Recargas
+            </h1>
+        </div>
+        <table>
+            <thead class="titulos">
+                <tr class="text-center">
+                    <th class="col-2">Fecha</th>
+                    <th class="col-2">Medio de Pago</th>
+                    <th class="col-2">Monto</th>
+                    <th class="col-2">Nº Operación</th>
+
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                @foreach (var item in Model)
+                {
+                    <tr class="mt-2 mb-2 fila-cuerpo">
+                        <td class="align-middle text-center py-2">
+                            @item.FechaRecargar.ToShortDateString()
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            @item.FormaRecarga
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            S/ @item.Cantidad
+                        </td>
+                        <td class="align-middle text-center py-2">
+                            @item.NumeroRecibo@item.IdTarjetaRecarga
+                        </td>
+                    </tr>
+                }
+                @if (idTarjetaEmpresa != null)
+                {
+                    <a asp-controller="Perfil" asp-action="TarjetaObtenida" class="btn btn-primary mb-5" asp-route-id="@idTarjetaEmpresa">Atras</a>
+                }
+            </tbody>
+
+        </table>
+    </body>
+</html>

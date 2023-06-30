@@ -1,0 +1,126 @@
+﻿@model IEnumerable<TrabajoFinalActualizado.Models.CambiarInfPersonal>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+    <head>
+        <link rel="stylesheet" href="~/css/perfilmain.css" />
+        <script src="https://kit.fontawesome.com/61ab311a79.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+    <div class="conteiner-fluid">
+        @foreach (var item in Model)
+        {
+            
+                <div class="row flex-nowrap">
+
+                    <div class="col-auto col-md-4 col-lg-3  d-flex flex-column justify-content-between">
+                        <div class="custom-nav">
+                            <ul class="nav nav-pills flex-column mt-4">
+                                <li class="nav-item custom-li">
+                                    <form asp-controller="Perfil" asp-action="ActualizarPerfil" method="post">
+                                        <input type="hidden" name="txtcodigo" asp-for="@item.IdPersonal" />
+                                        <input type="hidden" name="txtnombre" asp-for="@item.nombrePersonal" />
+                                        <button class="nav-link text-white d-flex align-items-center" type="submit" name="grabar"
+                                                data-toggle="modal" data-target="#exampleModal">
+                                            <i class="fa-solid fa-user-edit"></i>
+                                            <span class="fs-4 d-none d-sm-inline">Editar Perfil</span>
+                                        </button>
+                                    </form>
+                                </li>
+
+                                <li class="nav-item custom-li">
+                                    <a class="nav-link text-white d-flex align-items-center" asp-controller="Facturacion" asp-action="verFacturas" asp-route-id="@item.IdPersonal">
+                                        <i class="bi bi-bag-check-fill"></i><span class="fs-4 d-none d-sm-inline">  Mis Compras</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item custom-li">
+                                    <a class="nav-link text-white d-flex align-items-center" asp-controller="Perfil" asp-action="verTodasMisPeliculasCompradas">
+                                        <i class="fa-solid fa-film"></i><span class="fs-4 d-none d-sm-inline">  Mis Peliculas</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item custom-li">
+                                    <a class="nav-link text-white d-flex align-items-center" asp-controller="Perfil" asp-action="TarjetaObtenida" asp-route-id="@item.IdPersonal">
+                                        <i class="fa-regular fa-credit-card"></i><span class="fs-4 d-none d-sm-inline">  Tarjeta</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item custom-li">
+                                    <a class="nav-link text-white d-flex align-items-center" asp-controller="Perfil" asp-action="ObtenerNuestraTarjeta" asp-route-id="@item.IdPersonal">
+                                        <i class="bi bi-node-plus-fill"></i><span class="fs-4 d-none d-sm-inline">  Obtener Tarjeta</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row custom-row">
+                        <div class="custom-columna">
+                            <div class="row-caja">
+                                <div class="col-md-8 offset-2">
+                                    <form asp-controller="" asp-action="">
+                                        <div class="titulo">
+                                            <h1 class="text-center mt-5">Información de la cuenta</h1>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group mt-3">
+                                                    <label asp-for="@item.IdPersonal" class="control-label">ID<sup>*</sup></label>
+                                                    <input asp-for="@item.IdPersonal" class="form-control" readonly />
+                                                    <i class="fa-solid fa-id-card"></i>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <label asp-for="@item.nombrePersonal" class="control-label">Nombre<sup>*</sup></label>
+                                                    <input asp-for="@item.nombrePersonal" class="form-control" readonly />
+                                                    <i class="fa-solid fa-user"></i>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <label asp-for="@item.correoPersonal" class="control-label">Correo<sup>*</sup></label>
+                                                    <input asp-for="@item.correoPersonal" class="form-control" readonly />
+                                                    <i class="fa-solid fa-at"></i>
+                                                </div>
+                                                
+                                                <div class="form-group mt-3">
+                                                    <label asp-for="@item.distritoPersonal" class="control-label">Distrito<sup>*</sup></label>
+                                                    <input asp-for="@item.distritoPersonal" class="form-control" readonly />
+                                                    <i class="fa-solid fa-map-location-dot"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group mt-3">
+                                                    <label asp-for="@item.usuarioPersonal" class="control-label">Usuario<sup>*</sup></label>
+                                                    <input asp-for="@item.usuarioPersonal" class="form-control" readonly />
+                                                    <i class="fa-solid fa-image-portrait"></i>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <label asp-for="@item.apellidoPersonal" class="control-label">Apellido<sup>*</sup></label>
+                                                    <input asp-for="@item.apellidoPersonal" class="form-control" readonly />
+                                                    <i class="fa-solid fa-user"></i>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <label asp-for="@item.direccionPersonal" class="control-label">Dirección<sup>*</sup></label>
+                                                    <input asp-for="@item.direccionPersonal" class="form-control" readonly />
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <label asp-for="@item.provinciaPersonal" class="control-label">Provincia<sup>*</sup></label>
+                                                    <input asp-for="@item.provinciaPersonal" class="form-control" readonly />
+                                                    <i class="fa-solid fa-map"></i>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+        }
+    </div>
+    </body>
+
+</html>

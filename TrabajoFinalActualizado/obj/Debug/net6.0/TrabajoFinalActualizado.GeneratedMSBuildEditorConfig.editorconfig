@@ -1,0 +1,181 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TrabajoFinalActualizado
+build_property.RootNamespace = TrabajoFinalActualizado
+build_property.ProjectDir = E:\DBP\[TF]\TrabajoFinalActualizado\TrabajoFinalActualizado\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\DBP\[TF]\TrabajoFinalActualizado\TrabajoFinalActualizado
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/CargarSesion/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZ2FyU2VzaW9uXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/CargarSesion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZ2FyU2VzaW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/CargarSesion/LoginAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZ2FyU2VzaW9uXExvZ2luQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/CargarSesion/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZ2FyU2VzaW9uXFJlZ2lzdHJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Cuenta/LoginCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhXExvZ2luQ2xpZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Cuenta/RegistrarAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhXFJlZ2lzdHJhckFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Facturacion/boletaDetallada.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYWNpb25cYm9sZXRhRGV0YWxsYWRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Facturacion/Facturacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYWNpb25cRmFjdHVyYWNpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Facturacion/menorqueCero.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYWNpb25cbWVub3JxdWVDZXJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Facturacion/verFacturas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYWNpb25cdmVyRmFjdHVyYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Genero/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Genero/ListarPeliculas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJvXExpc3RhclBlbGljdWxhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Mantenimiento/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuaW1pZW50b1xEZXRhbGxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Mantenimiento/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuaW1pZW50b1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Mantenimiento/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuaW1pZW50b1xFbGltaW5hci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Mantenimiento/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuaW1pZW50b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Mantenimiento/Nuevo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuaW1pZW50b1xOdWV2by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Pelicula/carritoCompras.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFcY2Fycml0b0NvbXByYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Pelicula/Confirmacion_Pago.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFcQ29uZmlybWFjaW9uX1BhZ28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Pelicula/Generos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFcR2VuZXJvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Pelicula/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Pelicula/Modificar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFcTW9kaWZpY2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Pelicula/sobrePelicula.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFcc29icmVQZWxpY3VsYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Perfil/ActualizarPerfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXEFjdHVhbGl6YXJQZXJmaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Perfil/HistorialDeRecargas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXEhpc3RvcmlhbERlUmVjYXJnYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Perfil/Obtener222NuestraTarjeta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXE9idGVuZXIyMjJOdWVzdHJhVGFyamV0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Perfil/Obtener333NuestraTarjeta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXE9idGVuZXIzMzNOdWVzdHJhVGFyamV0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Perfil/ObtenerNuestraTarjeta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXE9idGVuZXJOdWVzdHJhVGFyamV0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Perfil/Perfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXFBlcmZpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Perfil/RecargarTarjeta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXFJlY2FyZ2FyVGFyamV0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Perfil/TarjetaObtenida.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXFRhcmpldGFPYnRlbmlkYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Perfil/verTodasMisPeliculasCompradas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXHZlclRvZGFzTWlzUGVsaWN1bGFzQ29tcHJhZGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Shared/_Identity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JZGVudGl0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/SobreNosotros/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29icmVOb3NvdHJvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DBP/\[TF\]/TrabajoFinalActualizado/TrabajoFinalActualizado/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-iuaa97p2rc

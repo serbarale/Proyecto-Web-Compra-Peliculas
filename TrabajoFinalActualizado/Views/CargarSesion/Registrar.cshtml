@@ -1,0 +1,125 @@
+﻿@model TrabajoFinalActualizado.Models.TbCliente
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/Estilo_Ventana.css">
+    <link rel="stylesheet" href="~/css/formstyle.css" />
+    <script src="https://kit.fontawesome.com/61ab311a79.js" crossorigin="anonymous"></script>
+
+</head>
+    <body>
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <div class="row-caja">
+                    <div class="col-md-8 offset-2">
+                        <form asp-controller="CargarSesion" asp-action="Pasar_Registro" method="post">
+                            <div class="titulo">
+                                <h1 class="text-center mt-5">Registrarse</h1>
+                            </div>
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group mt-3">
+                                <label asp-for="NombreCliente" class="control-label">Ingrese sus nombres<sup>*</sup></label>
+                                <input asp-for="NombreCliente" class="form-control" />
+                                <i class="fa-solid fa-user"></i>
+                                <span asp-validation-for="NombreCliente" class="text-danger"></span>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label asp-for="ApellidoCliente" class="control-label">Ingrese sus apellidos<sup>*</sup></label>
+                                <input asp-for="ApellidoCliente" class="form-control" />
+                                <i class="fa-solid fa-user"></i>
+                                <span asp-validation-for="ApellidoCliente" class="text-danger"></span>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label asp-for="CorreoCliente" class="control-label">Ingrese su Correo<sup>*</sup></label>
+                                <input asp-for="CorreoCliente" class="form-control" />
+                                <i class="fa-solid fa-at"></i>
+                                <span asp-validation-for="CorreoCliente" class="text-danger"></span>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label asp-for="DireccionCliente" class="control-label">Ingrese su Direccion<sup>*</sup></label>
+                                <input asp-for="DireccionCliente" class="form-control" />
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span asp-validation-for="DireccionCliente" class="text-danger"></span>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label asp-for="ProvinciaCliente" class="control-label">Provincia<sup>*</sup></label>
+                                <select asp-for="ProvinciaCliente" class="form-control">
+                                    <option value="">Selecciona su nueva opción</option>
+                                    <option value="LIMA">LIMA</option>
+                                </select>
+                                <span asp-validation-for="ProvinciaCliente" class="text-danger"></span>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label asp-for="DistritoCliente" class="control-label">Distrito<sup>*</sup></label>
+                                <select asp-for="DistritoCliente" class="form-control">
+                                    <option value="">Selecciona su nueva opción</option>
+                                    <option value="SAN ISIDRO">SAN ISIDRO</option>
+                                    <option value="LINCE">LINCE</option>
+                                    <option value="SURCO">SURCO</option>
+                                    <option value="MIRAFLORES">MIRAFLORES</option>
+                                    <option value="LA MOLINA">LA MOLINA</option>
+                                </select>
+                                <span asp-validation-for="DistritoCliente" class="text-danger"></span>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label asp-for="UsuarioCliente" class="control-label">Cree un Usuario<sup>*</sup></label>
+                                <input asp-for="UsuarioCliente" class="form-control" />
+                                <i class="fa-solid fa-image-portrait"></i>
+                                <span asp-validation-for="UsuarioCliente" class="text-danger"></span>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label asp-for="PasswordCliente" class="control-label">Cree una contraseña<sup>*</sup></label>
+                                <input asp-for="PasswordCliente" type="password" class="form-control" />
+                                <i class="fa-solid fa-key"></i>
+                                <span asp-validation-for="PasswordCliente" class="text-danger"></span>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="hidden" asp-for="TarjetaNuestraCliente" class="form-control" value="NO"/>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary btn-block btn-custom mt-4" type="submit" value="btn" name="iniciar" for="btn-modal">
+                                    <span class="fa-solid fa-right-from-bracket"></span> Registrarse
+                                </button>
+                            </div>
+                            <div class="form-group mt-4 mb-4">
+                                <a class="text-dark float-start" asp-controller="" asp-action="" onclick="Atras()">
+                                    <span class="fa-solid fa-chevron-left"></span>Atras
+                                </a>
+                                <a class="text-dark float-end" asp-controller="CargarSesion" asp-action="LoginAdmin">
+                                    <span class="icon-user-tie"></span> Admin
+                                </a>
+                            </div>
+                            <!--Ventana Modal-->
+                            <input type="checkbox" id="btn-modal">
+                            <div class="container-modal">
+                                <div class="content-modal">
+                                    <h2>¡Bienvenido!</h2>
+                                    <p>Se registró satisfactoriamente, dele click en continuar para que pueda logearse.</p>
+                                    <div class="btn-cerrar">
+
+                                        <button type="submit" class="btn btn-primary" value="btn" name="iniciar"
+                                                data-toggle="modal" data-target="#exampleModal">
+                                            Continuar
+                                        </button>
+                                    </div>
+                                </div>
+                                <label for="btn-modal" class="cerrar-modal"></label>
+                            </div>
+                            <!--Fin de Ventana Modal-->
+                        </form>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </body>
+    <script>
+        function Atras() {
+            window.history.back();
+        }
+    </script>
+
+</html>

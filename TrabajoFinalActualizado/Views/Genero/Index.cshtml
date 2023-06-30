@@ -1,0 +1,29 @@
+﻿@model IEnumerable<TrabajoFinalActualizado.Models.TbGenero>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="~/css/hojapeliculas.css">
+    </head>
+    <body>
+    <table class="table table-bordered">
+        <tr>
+            <td class="text-center">Genero</td>
+
+        </tr>
+        <tbody id="myTable">
+            <tr>
+                <td>
+                    <select name="Generos" id="combobox">
+                        @foreach (var item in Model)
+                        {
+                            <option value="Descripcion">
+                                <a asp-controller="Genero" asp-action="ListarPeliculas" asp-route-id="@item.IdGenero">@item.NombreGenero</a>
+                            </option>
+                        }
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </body>
+</html>

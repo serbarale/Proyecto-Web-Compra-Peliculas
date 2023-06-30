@@ -1,0 +1,45 @@
+﻿@model TrabajoFinalActualizado.Models.VentaTemporal
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+    <head>
+        <link rel="stylesheet" href="~/css/formstyle.css" />
+        <script src="https://kit.fontawesome.com/61ab311a79.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <div class="row-caja">
+                    <div class="col-md-8 offset-2">
+                        <form asp-controller="Pelicula" asp-action="ModificarPeliculaa" method="post">
+                            <div class="titulo">
+                                <h1 class="text-center mt-5"> Modificar</h1>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="hidden" asp-for="codigoV" class="form-control" placeholder="Ingrese a" />
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="hidden" asp-for="precioV" class="form-control" placeholder="Ingrese b" />
+                            </div>
+                            <div class="form-group mt-3">
+                                <label asp-for="cantidadV" class="control-label">Cantidad a comprar<sup>*</sup></label>
+                                <input asp-for="cantidadV" type="number" class="form-control" />
+                                <i class="bi bi-123"></i>
+                                <span asp-validation-for="cantidadV" class="text-danger"></span>
+                            </div>
+                            <div class="form-group mt-4 mb-4">
+                                <input type="submit" value="Modificar" class="btn btn-outline-success" />
+                                <a class="btn btn-outline-secondary" asp-controller="Pelicula" asp-action="carritoCompras">Atras</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
